@@ -1,0 +1,55 @@
+.basic-container {
+    display: flex;
+}
+
+.basic-container div.logo {
+    flex: none;
+    background: pink;
+    width: 25%;
+}
+
+.basic-container div.menu {
+    flex: auto;
+    background: orange;
+}
+
+.basic-container div.user {
+    flex: none;
+    background: skyblue;
+    width: 30%;
+}
+
+
+/*...*/
+
+.main-container {
+    background: #ccccd4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-container p {
+    flex: none;
+    width: 95%;
+    text-align: center;
+}
+
+.main-container .item {
+    flex: none;
+    margin: 5px;
+    width: 20%;
+    background: yellow;
+}
+
+@media (max-width:1000px) {
+    .main-container .item {
+        width: 45%;
+    }
+}
+
+@media (max-width:500px) {
+    .main-container .item {
+        width: 90%;
+    }
+}
